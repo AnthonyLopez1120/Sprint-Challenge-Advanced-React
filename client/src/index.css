@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+body .dark-mode-btn {
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+}
+body .list {
+  width: 500px;
+  margin: 30px auto;
+}
+body .list .list-item {
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+
+.darkmode {
+  background-image: linear-gradient(to bottom right, #313843, black);
+  background-color: #292929;
+  color: #fff;
+}
+
+.darkmode .dark-mode-btn{
+  background-color: #313843;
+}
+
+.darkmode .list .list-item {
+  background-color: #292929;
+}

@@ -2,7 +2,7 @@
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored class components, custom hooks, and testing. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that consumes data from an API using a custom hook, displays that data on the DOM, and tests your React components.
 
-The data you will get back from the server will be the Women's World Cup players ranked by search interest from Google Trends, June-July 2019, worldwide - https://googletrends.github.io/data/.
+The data you will get back from the server will be the Women's World Cup players ranked by search interest from Google Trends, June-July 2019, worldwide - https://googletrends.github.io/data/
 
 ## Instructions
 
@@ -23,9 +23,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+    Legacy code. Some future employer may be using classes. Class components alow for more flexablitiy 
+
 - [ ] Name three lifecycle methods and their purposes.
-- [ ] What is the purpose of a custom hook?
-- [ ] Why is it important to test our apps?
+    Mounting- The component is being built. We define our data. Render method is invoked and componentDidMount gets called
+
+    Updating- We are updating data on the component in this phase. setSate is used to update data and re render. shouldComponentUpdate can be used to stop a re render
+
+    Unmounting- This removes the component from the screen. componentWillMount can be used to clean up.
+    
+
+- [ ] What is the purpose of a custom hook? Make DRY code. We can customize our hooks greatly 
+
+
+- [ ] Why is it important to test our apps? -Testing gives us confidence that the code will work 
 
 ## Project Set Up
 
