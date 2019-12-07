@@ -7,8 +7,11 @@ import { render } from "@testing-library/react"
 
 
 test('renders without crashing', () => {
-  const component = render(<App/>)
+  render(<App/>);
 
 });
 
-// test()
+test("H1 is rendering", ()=>{
+  const container = render(<App/>)
+  container.getByText("Most Searched Players")
+})
